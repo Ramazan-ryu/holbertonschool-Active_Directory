@@ -12,3 +12,9 @@ vim /etc/hosts
 
 than
 ldapsearch -x -H ldap://DC01.pentestlab.local -b "dc=pentestlab,dc=local" "(objectClass=*)"
+
+TASK 2
+write checker answers, it isnot work |||||||||||||||directly copy paste checker answer
+
+TASK 3
+  Get-ItemProperty -Path "HKLM:\SOFTWARE\*" -ErrorAction SilentlyContinue
