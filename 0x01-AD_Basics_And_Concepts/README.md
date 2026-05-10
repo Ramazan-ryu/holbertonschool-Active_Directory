@@ -16,5 +16,23 @@ ldapsearch -x -H ldap://DC01.pentestlab.local -b "dc=pentestlab,dc=local" "(obje
 TASK 2
 write checker answers, it isnot work |||||||||||||||directly copy paste checker answer
 
-TASK 3
+TASK 3 in powershell windowsServer
   Get-ItemProperty -Path "HKLM:\SOFTWARE\*" -ErrorAction SilentlyContinue
+
+
+TASK 4 in kali
+ldapsearch -x -H ldap://DC01.PENTESTLAB.local \
+-b "dc=pentestlab,dc=local" "(objectClass=user)" sAMAccountName description
+ 
+pay more attention and find your flag 
+
+
+
+
+ADDITONAL NOTE 
+YOU CAN ALSO USE THIS 
+ldapsearch -x -H ldap://DC01.PENTESTLAB.local \
+-b "dc=pentestlab,dc=local" "(objectClass=user)" "*" "+" | grep -i "description\|info\|flag"
+
+IT IS NOT COMPLETE FLAG BUT YOU CAN USE IT 
+
